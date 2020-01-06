@@ -80,6 +80,13 @@ function matchSquare(id) {
     }
 }
 
+function reset() {
+    for (i = 0; i < grid.length; i++) {
+        document.getElementById(grid[i].name).style.background = 'linear-gradient(#ffffff, #d9d9d9)';
+        grid[i].count = 0;
+    }
+}
+
 function testFunc() {
     window.alert(grid[0].name);
 }
